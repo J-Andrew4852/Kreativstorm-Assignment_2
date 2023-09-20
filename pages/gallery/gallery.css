@@ -1,0 +1,31 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#galleryMain {
+  height: 70vh;
+  padding-top: 50px;
+  background-color: red;
+}
+
+#galleryHeroSection {
+
+}
+
+.galleryHero {
+  height: 350px;
+  background-color: #1F2937;
+}
+
+.galleryHeroTitle {
+  padding: 60px;
+}
+
+.galleryHeroTitle h4 {
+  margin-bottom: 4px;
+}
+
+.galleryHeroTitle h4, .galleryHeroTitle h2 {
+  margin-top: 0;
+}
