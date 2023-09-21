@@ -7,7 +7,8 @@
 :root a {
   text-decoration: none;
 }
-/* CSS RESET */
+
+/* ===== CSS RESET ====*/
 * { margin: 0; padding: 0; }
 
 body {
@@ -122,8 +123,11 @@ p.galleryHeroDescription {
   color: var(--hero-main-text-color);
 }
 
+.galleryHeroImage {
+  width: 300px;
+}
 
-/* ANIMATION */
+/* ======== IMAGE ANIMATION ======== */
 
 @keyframes breathe {
   0%, 100% {
@@ -141,4 +145,19 @@ p.galleryHeroDescription {
 
 .animateBreathe {
   animation: breathe 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ================================ GALLERY YEAR ================================ */
+.galleryYear h1 {
+  padding: 40px 0px;
+  font-size: var(--information-header-text-size);
+  text-align: center;
+  color: var(--information-header-text-color);
+}
+
+/* ================================ GALLERY YEAR ================================ */
+.galleryImages {
+  width: 100%;
+  height: 100px;
+  background-color: var(--dark-background-color);
 }
