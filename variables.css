@@ -1,28 +1,28 @@
 :root {
-  /* ================================ COLORS ================================ */
+/* ================================ COLORS ================================ */
 
-  --dark-background-color: #1f2937;
+  --dark-background-color: #1F2937;
+  
+  --hero-main-text-color: #F9FAF8; /* EXTRA BOLD*/
+  --hero-secondary-text-color: #E5E7EB;
+  
+  --header-logo-text-color: #F9FAF8;
+  
+  --button-color: #3882F6;
+  
+  --information-header-text-color: #1F2937; /* EXTRA BOLD */
+  
+  --quote-section-background-color: #E5E7EB;
+  --quote-text-color: #1F2937; /* LIGHT ITALIC */
 
-  --hero-main-text-color: #f9faf8; /* EXTRA BOLD*/
-  --hero-secondary-text-color: #e5e7eb;
-
-  --header-logo-text-color: #f9faf8;
-
-  --button-color: #3882f6;
-
-  --information-header-text-color: #1f2937; /* EXTRA BOLD */
-
-  --quote-section-background-color: #e5e7eb;
-  --quote-text-color: #1f2937; /* LIGHT ITALIC */
-
-  /* ================================ SIZES ================================ */
+/* ================================ SIZES ================================ */
 
   --hero-main-text-size: 48px;
   --hero-secondary-text-size: 18px;
-
+  
   --header-logo-text-size: 24px;
-
+  
   --information-header-text-size: 36px;
-
+  
   --quote-text-size: 36px;
 }
