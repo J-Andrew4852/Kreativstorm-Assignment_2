@@ -1,0 +1,219 @@
+
+.about-us-heading {
+    text-align: center; 
+    background-color: #E5E7EB; 
+    color:#000000; /* Text color (white) */
+    padding: 10px; /* Padding around the heading */
+    font-size: 36px; /* Font size for the heading */
+    font-weight: bold; /* Bold font weight */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    animation: slideFromTop 1s ease-in-out; /* Animation for sliding from top */
+}
+
+/* Hover effect */
+.about-us-heading:hover {
+    background-color:#1f2937; /* Darker background color on hover */
+}
+
+
+/* Keyframes animation for sliding from top */
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-50px); /* Start off the screen (above) */
+        opacity: 0; /* Start with zero opacity */
+    }
+    to {
+        transform: translateY(0); /* Move to the center */
+        opacity: 1; /* Fade in */
+    }
+}
+
+/* Apply these styles to the hero section */
+.hero {
+background-color: #1f2937; /* Dark blue background color */
+color: #fff; /* White text color */
+text-align: center;
+padding: 100px 0; 
+margin-bottom: 20px;/* Adjust the padding as needed for spacing */
+}
+
+/* Style the heading and paragraph */
+.hero h1 {
+font-size: 36px; /* Adjust the font size as needed */
+transition: transform 0.2s ease; /* Add a transform transition */
+}
+
+.hero p {
+font-size: 18px; /* Adjust the font size as needed */
+transition: transform 0.2s ease;
+/* Add a transform transition */
+}
+
+/* Add hover effect */
+.hero h1:hover,
+.hero p:hover {
+transform: scale(1.1); /* Increase the size on hover */
+}
+/* Reset some default styles */
+body, h1, p {
+margin: 0;
+padding: 0;
+}
+Style the quote section 
+.quote-section {
+background-color: #E5E7EB;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+text-align: center;
+}
+
+
+/* Style the individual quotes */
+.quote {
+margin: 30px;
+padding: 30px;
+border: 10px solid #1f2937;
+border-radius: 10px;
+background-color:#E5E7EB;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+font-size: 36px;
+font-style: italic;
+color: #1f2937;
+transition: transform 0.3s ease-in-out;
+
+}
+
+/* Add animation on hover */
+.quote:hover {
+transform: scale(1.05);
+}
+
+/* Style the quote author */
+cite {
+font-weight: bold;
+font-size: 18px;
+color: #1f2937;
+}
+
+.align
+{
+background:#fff; 
+position:relative;
+height:100%;
+width:100%;
+/* max-width:600px;*/
+overflow:auto;
+ margin:0 auto;}
+h1
+{
+text-align:center;
+font-size:2em;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+img{
+width:100%;
+ height:100%; 
+ margin-top:10px;
+  border-radius:.12em; 
+  box-shadow:0 0 0 2px #fcf6f6;
+}
+.align{
+padding-top:20px;
+width:100%;
+height:580px;
+display:flex;
+flex-flow:row wrap;
+justify-content:space-around;
+align-items:space-around;
+}
+.card-container{
+-webkit-perspective:1200;
+-moz-perspective:1200;
+perspective:1200;
+}
+.card-vertical, .card-horizontal{
+height:350px;
+width:350px;
+-moz-transform-style:preserve-3d;
+-webkit-transform-style:preserve-3d;
+transform-style:preserve-3d;
+
+transition:all .4s ease;
+
+}
+.card-front, .card-back{
+color:#F9FAF8;
+height:100%;
+width:100%;
+position:absolute;
+background:#1f2937 ;
+-moz-backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transform-style:preserve-3d;
+-moz-transform-style:preserve-3d;
+transform-style:preserve-3d;
+}
+
+.card-back{
+-moz-transform:rotateY(179.9deg);
+-webkit-transform:rotateY(179.9deg);
+transform:rotateY(179.9deg);
+background:gray ;
+}
+.card-front-content, .card-back-content{
+padding:3em;
+box-sizing:border-box;
+text-align:center;
+line-height:2.6em ;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.card-back-hr{
+-webkit-transform:rotateX(179.9deg);
+-moz-transform:rotateX(179.9deg);
+transform:rotateX(179.9deg);
+}
+.card-vertical:hover{
+-webkit-transform:rotateY(179.9deg);
+-moz-transform:rotateY(179.9deg);
+transform:rotateY(179.9deg);
+}
+.card-horizontal:hover{
+-webkit-transform:rotateX(179.9deg);
+-moz-transform:rotateX(179.9deg);
+transform:rotateX(179.9deg);
+}
+
+/* Style for the entire footer section */
+footer {
+background-color: #1f2937; /* Background color for the footer */
+color: #fff; /* Text color for the footer */
+text-align: center; /* Center-align the content */
+padding: 20px 0; /* Add vertical padding */
+}
+
+/* Style for the footer content */
+.footer-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* Style for the "Go Back to Top" link */
+.footer-content a {
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+margin-top: 10px; /* Add spacing between the content and the link */
+transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.footer-content a:hover {
+color: black; /* Change the color on hover (adjust as needed) */
+}
