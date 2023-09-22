@@ -59,18 +59,103 @@ body {
     font-weight: 700;
     color: #3882F6;
 }
-
-.dropBtn {
-    display: none;
+.navContainer input {
+    display: none
 }
-.dropdown {
+.burgerIcon {
     display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .logo {
+    position: relative;
     width: fit-content;
     margin: auto 0;
     padding-left: 6vw;
+    z-index: 10;
+}
+
+.menuToggle {
+    display: none;
+}
+.dropdown {
+    display: block;
+    position: absolute;
+    top: -600px;
+    left: 0;
+    width: 100%;
+    background-color: #1F2937;
+    border-bottom: 3px solid var(--button-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+.menuToggle:checked + .burgerIcon ~ .dropdown {
+    transform: translateY(600px);
+}
+
+.dropdownContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.dropdown .dropdownContent a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 15px 0 15px 0;
+}
+.dropdown .dropdownContent .activeNav {
+    font-weight: 700;
+    color: #3882F6;
+}
+.dropdown .dropdownContent a:hover {
+    color: #3882F6;
+}
+
+@media (max-width: 768px) {
+    .navContainer {
+        display: none;
+    }
+    .burgerIcon {
+        display: block;
+    }
+    .menuToggle {
+        display: none;
+    }
+    .burgerIcon {
+        padding: 0 6vw 0 0;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .burgerIcon > svg {
+        fill: white;
+    }  
+    .burgerIcon > svg:hover {
+        fill: #3882F6;
+    }  
+    .burgerIcon > svg rect {
+        transition: transform 0.3s ease;
+    }  
+    .menuToggle:checked + .burgerIcon > svg rect:nth-child(1) {
+        transform: rotate(-45deg) translate(-15px, 22px);
+    }
+    
+    .menuToggle:checked + .burgerIcon > svg rect:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menuToggle:checked + .burgerIcon > svg rect:nth-child(3) {
+        transform: rotate(45deg) translate(9px, -22px);
+    }
 }
 
 /* ================================ ABOUT PAGE ================================ */
