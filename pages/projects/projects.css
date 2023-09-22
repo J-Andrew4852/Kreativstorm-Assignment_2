@@ -54,61 +54,80 @@ body {
   padding: 0;
 }
 
-/* ================================ NAVIGATION ================================ */
-
-.navbar {
-  background-color: #1f2937;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+/* ================================ ROOT ================================ */
+:root {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
-
-.logo img {
-  max-height: 40px;
-  margin-left: 190px;
-}
-
-.nav-list ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.nav-list li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.nav-list a {
-  color: white;
+:root a {
   text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+
+/* ================================ NAVIGATION ================================ */
+.navBar {
+  height: 50px;
+  background-color: #1F2937;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.maxWidth {
+  display: flex;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.navContainer {
+  margin-left: auto;
+  width: fit-content;
+  display: flex;
+  text-align: right;
+  margin-right: 6vw;
+}
+.navContainer a {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.navBtn {
+  text-decoration: none;
+  color: white;
   font-size: 1.1rem;
   margin: 0 0.5rem 0 0.5rem;
   padding: 0 1rem 0 1rem;
 }
-
-.nav-list a:hover {
-  color: #3882f6;
+.navBtn:hover {
+  color: #3882F6;
 }
-
-a.activeNav {
+.activeNav {
   font-weight: 700;
-  color: #3882f6;
+  color: #3882F6;
 }
 
-/* .dropBtn {
+.dropBtn {
   display: none;
 }
 .dropdown {
   display: none;
-} */
+}
+
+.logo {
+  width: fit-content;
+  margin: auto 0;
+  padding-left: 6vw;
+}
+
+
+/* ================================ YOUR CODE GOES BELOW HERE ================================ */
 
 #section1 {
   height: 180px;
@@ -296,4 +315,24 @@ footer {
 
 .footer-content span {
   margin-right: 5px;
+}
+
+/* Back Top Section */
+.backTopSection {
+  padding: 10vh 0 10vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+.backTopSection h2 {
+  color: var(--dark-background-color);
+  padding: 0 50px 0 20px;
+}
+.backTopSection:hover svg path {
+  fill: #3882F6;
+}
+.backTopSection:hover h2 {
+  color: #3882F6;
 }

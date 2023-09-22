@@ -3,21 +3,19 @@
 /* ================================ ROOT ================================ */
 :root {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 :root a {
   text-decoration: none;
 }
-
-/* ===== CSS RESET ====*/
-* { margin: 0; padding: 0; box-sizing: border-box;}
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   width: 100vw;
   height: 100vh;
 }
-
-
 
 /* ================================ NAVIGATION ================================ */
 .navBar {
@@ -42,7 +40,11 @@ body {
   width: fit-content;
   display: flex;
   text-align: right;
-  margin-right: 4vw;
+  margin-right: 6vw;
+}
+.navContainer a {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .navBtn {
   text-decoration: none;
@@ -66,9 +68,10 @@ body {
   display: none;
 }
 
-.placeholder {
-  width: 100%;
-  height: 100vh;
+.logo {
+  width: fit-content;
+  margin: auto 0;
+  padding-left: 6vw;
 }
 
 /* ================================ GALLERY ================================ */

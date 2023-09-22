@@ -1,9 +1,84 @@
+/* YOU NEED THIS */
+@import url('../../variables.css');
 
+/* ================================ ROOT ================================ */
+:root {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+:root a {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+
+/* ================================ NAVIGATION ================================ */
+.navBar {
+    height: 50px;
+    background-color: #1F2937;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.maxWidth {
+    display: flex;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.navContainer {
+    margin-left: auto;
+    width: fit-content;
+    display: flex;
+    text-align: right;
+    margin-right: 6vw;
+}
+.navContainer a {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.navBtn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0 1rem 0 1rem;
+}
+.navBtn:hover {
+    color: #3882F6;
+}
+.activeNav {
+    font-weight: 700;
+    color: #3882F6;
+}
+
+.dropBtn {
+    display: none;
+}
+.dropdown {
+    display: none;
+}
+
+.logo {
+    width: fit-content;
+    margin: auto 0;
+    padding-left: 6vw;
+}
+
+/* ================================ ABOUT PAGE ================================ */
 .about-us-heading {
     text-align: center; 
     background-color: #E5E7EB; 
     color:#000000; /* Text color (white) */
-    padding: 10px; /* Padding around the heading */
+    padding: 60px 10px 10px 10px; /* Padding around the heading */
     font-size: 36px; /* Font size for the heading */
     font-weight: bold; /* Bold font weight */
     transition: background-color 0.3s; /* Smooth background color transition */
@@ -189,31 +264,23 @@ transform:rotateY(179.9deg);
 transform:rotateX(179.9deg);
 }
 
-/* Style for the entire footer section */
-footer {
-background-color: #1f2937; /* Background color for the footer */
-color: #fff; /* Text color for the footer */
-text-align: center; /* Center-align the content */
-padding: 20px 0; /* Add vertical padding */
+/* Back Top Section */
+.backTopSection {
+    padding: 10vh 0 10vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+.backTopSection h2 {
+    color: var(--dark-background-color);
+    padding: 0 50px 0 20px;
+}
+.backTopSection:hover svg path {
+    fill: #3882F6;
+}
+.backTopSection:hover h2 {
+    color: #3882F6;
 }
 
-/* Style for the footer content */
-.footer-content {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-/* Style for the "Go Back to Top" link */
-.footer-content a {
-text-decoration: none;
-color: #fff;
-font-weight: bold;
-margin-top: 10px; /* Add spacing between the content and the link */
-transition: color 0.3s; /* Smooth color transition on hover */
-}
-
-/* Change link color on hover */
-.footer-content a:hover {
-color: black; /* Change the color on hover (adjust as needed) */
-}
