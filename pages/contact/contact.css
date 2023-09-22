@@ -408,7 +408,7 @@ textarea.input {
 
 /* Footer Section */
 .footContainer {
-    width: 100%;
+    width: calc(100% - 2em);
     background-color: var(--dark-background-color);
     padding: 1em;
 }
@@ -490,6 +490,15 @@ textarea.input {
     }
     .input {
         font-size: 24px;
+    }
+    .footerLeft {
+        flex-direction: column;
+    }
+    .footContainer {
+        padding-top: 2em;
+    }
+    .footContainer p {
+        padding: 3px 20px 3px 20px;
     }
 }
 @media screen and (max-width: 600px) {

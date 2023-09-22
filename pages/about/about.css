@@ -369,3 +369,39 @@ transform:rotateX(179.9deg);
     color: #3882F6;
 }
 
+/* Footer Section */
+.footContainer {
+    width: calc(100% - 4em);
+    background-color: var(--dark-background-color);
+    padding: 2em;
+    color: var(--hero-secondary-text-color);
+    font-family: 'Roboto', sans-serif;
+}
+.footContainer .maxWidth {
+    display: flex;
+    flex-direction: row;
+}
+.footContainer p {
+    padding: 10px 20px 10px 20px;
+}
+.footerLeft {
+    display: flex;
+    padding-left: 2em;
+    width: 60%;
+}
+.footerRight {
+    text-align: end;
+    padding-right: 2em;
+    width: 40%;
+}
+@media screen and (max-width: 780px) {
+    .footerLeft {
+        flex-direction: column;
+    }
+    .footContainer {
+        padding-top: 2em;
+    }
+    .footContainer p {
+        padding: 10px 20px 10px 20px;
+    }
+}

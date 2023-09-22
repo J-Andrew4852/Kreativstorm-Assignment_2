@@ -411,3 +411,29 @@ footer {
 .backTopSection:hover h2 {
   color: #3882f6;
 }
+
+/* Footer Section */
+.footContainer {
+  width: calc(100% - 2em);
+  background-color: var(--dark-background-color);
+  padding: 1em;
+  color: var(--hero-secondary-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+.footContainer .maxWidth {
+  display: flex;
+  flex-direction: row;
+}
+.footContainer p {
+  padding: 10px 20px 10px 20px;
+}
+.footerLeft {
+  display: flex;
+  padding-left: 2em;
+  width: 60%;
+}
+.footerRight {
+  text-align: end;
+  padding-right: 2em;
+  width: 40%;
+}
