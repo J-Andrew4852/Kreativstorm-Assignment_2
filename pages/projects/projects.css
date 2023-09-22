@@ -1,5 +1,31 @@
 @import url("../../variables.css");
 
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2vw;
+  }
+
+  .project-info {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .project-info h3 {
+    font-size: 20px;
+  }
+
+  .project-info p {
+    font-size: 16px;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+}
+
 /* Small screens (≥576px) */
 @media (min-width: 576px) {
   .carousel img {
@@ -179,10 +205,15 @@ a.activeNav {
   justify-content: center;
   max-width: 1000px;
   margin: 80px auto;
-  background-color: #fff;
-  border-radius: 30px;
-  box-shadow: 5px 10px 30px 5px rgb(56, 130, 246, 0.3);
+  background-color: white;
+  border-radius: 3vw;
+  box-shadow: 0.15vw 0.2vw 1.5vw rgba(0, 0, 0, 0.15);
   overflow: hidden;
+}
+
+.project:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0.15vw 0.2vw 2.5vw rgba(56, 130, 246, 0.35);
 }
 
 .project-info {
@@ -212,7 +243,9 @@ a.activeNav {
 }
 
 .project-info a:hover {
-  background-color: #555;
+  background-color: var(--hero-main-text-color);
+  color: var(--button-color);
+  transition: 0.3s ease-in-out;
 }
 
 .project-image {
