@@ -319,6 +319,31 @@ textarea.input {
     color: #3882F6;
 }
 
+/* Footer Section */
+.footContainer {
+    width: 100%;
+    background-color: var(--dark-background-color);
+    padding: 1em;
+}
+.footContainer .maxWidth {
+    display: flex;
+    flex-direction: row;
+}
+.footContainer p {
+    padding: 10px 20px 10px 20px;
+}
+.footerLeft {
+    display: flex;
+    padding-left: 2em;
+    width: 60%;
+}
+.footerRight {
+    text-align: end;
+    padding-right: 2em;
+    width: 40%;
+}
+
+
 @media screen and (min-width: 1800px) {
     .heroSection {
         height: 750px;
