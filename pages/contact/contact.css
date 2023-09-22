@@ -6,7 +6,9 @@
 :root a {
     text-decoration: none;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
 }
@@ -136,6 +138,7 @@ body {
     color: var(--button-color);
     transition: 0.3s ease-in-out;
 }
+
 /* Contact Section */
 .contactSection {
     display: flex;
@@ -152,12 +155,12 @@ body {
 }
 
 .gridContainer {
+    padding: 0 0 15vh 0;
     position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 3em ;
-    margin-bottom: 50px;
     justify-items: center;
 }
 .card {
@@ -170,6 +173,7 @@ body {
     border-radius: 3vw;
     box-shadow: 0.15vw 0.2vw 1.5vw rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    word-break: break-all;
 }
 .card:hover {
     transition: 0.3s ease-in-out;
@@ -200,6 +204,7 @@ body {
 .cardRight {
     width: 70%;
     color: 1E1E1E;
+    padding-right: 2em;
 }
 .name {
     font-size: 32px;
@@ -215,6 +220,7 @@ body {
     display: flex;
     align-items: center;
     padding: 13px 0 13px 40px;
+    cursor: pointer;
 }
 .location p, .website p, .email p {
     margin: 0;
@@ -233,5 +239,172 @@ body {
 }
 .location:hover p, .website:hover p, .email:hover p {
     color: #3882F6;
+    font-weight: 700;
+}
+
+/* Start Section */
+.formSection {
+    background-color: var(--dark-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formSection h2 {
+    padding: 15vh 0 8vh 0;
+}
+.formContainer {
+    padding: 0 0 12vh 0;
+    width: 60%;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 1fr 1fr;
+}
+.input {
+    grid-column: span 2;
+    width: calc(100% - 40px);
+    border: none;
+    background: #F9FAF8;
+    color: #1E1E1E;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 100;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 1px 3px 12px rgba(2, 10, 19, 0.6);
+}
+.shortInput {
+    grid-column: span 1;
+}
+.formContainer .btn {
+    grid-column: span 2;
+    justify-self: end;
+    border-color: #3882F6;
+}
+.formContainer .btn:hover {
+    border-color: #F9FAF8;
+}
+
+/* Back Top Section */
+.backTopSection {
+    padding: 10vh 0 10vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 0.3s;
     cursor: pointer;
+}
+.backTopSection h2 {
+    color: var(--dark-background-color);
+    padding: 0 50px 0 20px;
+}
+.backTopSection:hover svg path {
+    fill: #3882F6;
+}
+.backTopSection:hover h2 {
+    color: #3882F6;
+}
+
+@media screen and (min-width: 1800px) {
+    .heroSection {
+        height: 750px;
+    }
+    .heroLeft {
+        width: 50%;
+    }
+    .name {
+        padding: 60px 0 20px 35px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .heroSection .heroLeft {
+        padding: 15vh 0 0 0;
+    }
+    .location p, .website p, .email p {
+        font-size: 18px;
+    }
+    .name {
+        font-size: 40px;
+        padding: 50px 0 15px 35px;
+    }
+    .role {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .card {
+        max-width: 75%;
+    }
+}
+@media screen and (max-width: 780px) {
+    .heroSection {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 4em;
+    }
+    .heroLeft {
+        width: 80%;
+    }
+    .heroRight {
+        width: 80%;
+        align-self: auto;
+    }
+    .card {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card {
+        max-width: 95vw;
+    }
+    .name {
+        font-size: 28px;
+        padding: 30px 0 5px 25px;
+    }
+    .role {
+        font-size: 14px;
+        padding: 0 0 15px 25px;
+    }
+    .location, .website, .email {
+        padding: 8px 0 8px 30px;
+    }
+    .gridContainer {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+@media screen and (max-width: 500px) {
+    .gridContainer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .contactSection {
+        padding: 0 5vw 0 5vw;
+        width: calc(100% - 10vw);
+    }
+    .card {
+        max-width: 100%;
+        aspect-ratio: 1.5/1;
+    }
+    .location, .website, .email {
+        padding: 5px 0 5px 25px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .gridContainer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .contactSection {
+        padding: 0 2vw 0 2vw;
+        width: calc(100% - 4vw);
+    }
+    .card {
+        aspect-ratio: auto;
+    }
+    .cardRight {
+        padding-right: 1em;
+    }
+    .location, .website, .email {
+        padding: 5px 0 5px 0px;
+        font-size: 10px;
+    }
 }
