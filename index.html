@@ -6,34 +6,108 @@
     <title>Digital Agency Name</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navBar">
-        <div class="maxWidth">
-            <div>LOGO</div>
-            <div class="navContainer">
-                <a class="navBtn activeNav" href="/">Home</a>
-                <a class="navBtn" href="./pages/about/about.html">About Us</a>
-                <a class="navBtn" href="./pages/projects/projects.html">Projects</a>
-                <a class="navBtn" href="./pages/gallery/gallery.html">Gallery</a>
-                <a class="navBtn" href="./pages/contact/contact.html">Contact</a>
-                <button class="dropBtn">Menu</button>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="40" viewBox="0 0 44 50">
+                    <image class="logoRight" id="Vector_Smart_Object" data-name="Vector Smart Object" width="44" height="50" xlink:href="data:img/png;base64,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"/>
+                </svg>
             </div>
-        </div>
-        <div class="dropdown">
-            <div class="dropdown-content">
-                <a href="/">Home</a>
-                <a href="./pages/about/about.html">About Us</a>
-                <a href="./pages/projects/projects.html">Projects</a>
-                <a href="./pages/gallery/gallery.html">Gallery</a>
-                <a href="./pages/contact/contact.html">Contact</a>
+            <div class="nav-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./pages/projects.html">Projects</a></li>
+                        <li><a href="./pages/gallery.html">Gallery</a></li>
+                        <li><a href="./pages/about.html">About Us</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="home">
+            <div class="container">
+                <h1>We are Awesome Creative Agency</h1>
+                <p>Our goal is to empower our clients to become leaders in their respective markets and make a positive impact in the world
+                </p>
+                <button>Sign Up</button>
             </div>
+            <img src="./images/HomePage/Light bulb-amico (2).png" alt="homePhoto">
         </div>
-    </nav>
-    <div class="placeholder">
-
-    </div>
+    </header>
+    <main>
+        <section class="firstSection">
+            <img class="startingUp" src="./images/HomePage/logo-big (1).svg" alt="logo">
+            <div class="containerFirstSection">
+                <h1>OUR STORY</h1>
+                <p>our story is one of passion, creativity, and a relentless pursuit of innovation. It all began with a shared dream to redefine the boundaries of design and marketing. Founded by a group of visionary creatives, we embarked on this journey with the belief that every brand has a unique narrative waiting to be told.
+                </p>
+                <button>About US</button>
+            </div>
+        </section>
+        <section class="secondSection">
+            <h1>MEET OUR AMAZING TEAM</h1>
+            <div class="containerSecondSection">
+                <div class="card">
+                    <img src="./images/HomePage/PHOTO-2023-02-23-15-56-48 2.jpg" alt="">
+                    <h3>Momtaz Asmar</h3>
+                    <p>Fullstack developer</p>
+                </div>
+                <div class="card">
+                    <img src="./images/HomePage/Screenshot 2023-09-22 at 10.01.37 AM.png" alt="">
+                    <h3>Grantas Joniškis</h3>
+                    <p>Fullstack developer</p>
+                </div>
+                <div class="card">
+                    <img src="./images/HomePage/Screenshot 2023-09-22 at 10.02.29 AM.png" alt="">
+                    <h3>James Andrew</h3>
+                    <p>Fullstack developer</p>
+                </div>
+                <div class="card">
+                    <img src="./images/HomePage/Screenshot 2023-09-22 at 10.02.59 AM.png" alt="">
+                    <h3>Agnes Wunderlich</h3>
+                    <p>FrontEnd Developer</p>
+                </div>
+                <div class="card">
+                    <img src="./images/HomePage/team4.png" alt="">
+                    <h3>Name Family</h3>
+                    <p>FrontEnd Developer</p>
+                </div>
+            </div>
+        </section>
+        <section class="thirdSection">
+            <h3>The 3 pillars of success for your <br> professional media website:</h3>
+            <div class="containerCards">
+                <div class="containerCard">
+                    <i class='bx bx-cog'></i>
+                    <h4>Your new website</h3>
+                    <p>Your new website, professionally created by us, can be launched immediately. We even write the texts for you and use exciting images to create a modern, contemporary look.</p>
+                </div>
+                <div class="containerCard">
+                    <i class='bx bx-collection'></i>
+                    <h4>Designed for customer acquisition</h3>
+                    <p>We will not only provide you with a particularly attractive  website, but also an extremely sales-oriented one. We plan lead generation and business initiation for you right away.</p>
+                </div>
+                <div class="containerCard">
+                    <i class='bx bx-search-alt' ></i>
+                    <h4>Your website is search <br>engine optimized</h3>
+                    <p>With our SEO strategy, which is also included, we help you reach exactly those customers, employees and business r partners who are actively looking for you, your achievements and services online.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerPart">
+            <div class="links">
+                <a href="">HELP</a>
+                <a href="">TERMS AND CONDITIONS</a>
+                <a href="">PRIVACY</a>
+            </div>
+            <div class="copyRight">Copyright © 2015 - Tajem Creative</div>
+        </div>
+    </footer>
 </body>
 </html>
