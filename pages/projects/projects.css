@@ -2,6 +2,25 @@
 
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
   .project {
     flex-direction: column;
     align-items: center;
@@ -54,25 +73,12 @@ body {
   padding: 0;
 }
 
-/* ================================ ROOT ================================ */
-:root {
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
-}
-:root a {
-  text-decoration: none;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-}
+/* ================================ NAVIGATION ================================ */
 
 /* ================================ NAVIGATION ================================ */
 .navBar {
   height: 50px;
-  background-color: #1F2937;
+  background-color: #1f2937;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   width: 100%;
@@ -106,11 +112,11 @@ body {
   padding: 0 1rem 0 1rem;
 }
 .navBtn:hover {
-  color: #3882F6;
+  color: #3882f6;
 }
 .activeNav {
   font-weight: 700;
-  color: #3882F6;
+  color: #3882f6;
 }
 
 .dropBtn {
@@ -125,9 +131,6 @@ body {
   margin: auto 0;
   padding-left: 6vw;
 }
-
-
-/* ================================ YOUR CODE GOES BELOW HERE ================================ */
 
 #section1 {
   height: 180px;
@@ -144,69 +147,55 @@ body {
   margin-bottom: 30px;
 }
 
-#section2 {
+.container {
   background-color: #1f2937;
-  padding: 100px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 8rem;
 }
 
-.carousel-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+.slider-wrapper {
   position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
 }
 
-.carousel {
+.slider {
   display: flex;
-  justify-content: space-between;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  align-items: center;
-  max-height: 500px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
 }
 
-.carousel a {
-  text-decoration: none;
-  transition: transform 0.3s ease;
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
 }
 
-.carousel img {
-  max-width: 300px;
-  height: auto;
-  cursor: pointer;
-  margin: 0 10px;
-}
-
-.carousel a:hover {
-  transform: scale(1.1);
-}
-
-.carousel-arrow {
-  cursor: pointer;
-  height: auto;
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #333;
-  padding: 12px 12px;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
+  background-color: white;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
 }
 
-#left-arrow {
-  left: 10px;
-  background-image: url("images/left-arrow.png");
+.slider-nav a:hover {
+  opacity: 1;
 }
 
-#right-arrow {
-  right: 10px;
-  background-image: url("images/arrow-point-to-right.png");
-}
-
-/* Add styles for section3 */
 #section3 {
   background-color: #f7f7f7;
   padding: 40px;
@@ -331,8 +320,8 @@ footer {
   padding: 0 50px 0 20px;
 }
 .backTopSection:hover svg path {
-  fill: #3882F6;
+  fill: #3882f6;
 }
 .backTopSection:hover h2 {
-  color: #3882F6;
+  color: #3882f6;
 }
