@@ -272,6 +272,13 @@ body {
     padding: 10px 20px 10px 20px;
     box-shadow: 1px 3px 12px rgba(2, 10, 19, 0.6);
 }
+textarea.input {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    resize: none;
+    padding: 20px 20px 10px 20px;
+}
 .shortInput {
     grid-column: span 1;
 }
@@ -330,6 +337,11 @@ body {
         font-size: 20px;
     }
 }
+@media screen and (max-width: 1200px) {
+    .formContainer {
+        width: 75%;
+    }
+}
 @media screen and (max-width: 950px) {
     .card {
         max-width: 75%;
@@ -352,6 +364,13 @@ body {
     .card {
         max-width: 100%;
     }
+    .formContainer {
+        width: 85%;
+        gap: 2em;
+    }
+    .input {
+        font-size: 24px;
+    }
 }
 @media screen and (max-width: 600px) {
     .card {
@@ -370,6 +389,9 @@ body {
     }
     .gridContainer {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .shortInput {
+        grid-column: span 2;
     }
 }
 @media screen and (max-width: 500px) {
