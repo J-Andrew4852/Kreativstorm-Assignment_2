@@ -173,7 +173,6 @@ body {
     border-radius: 3vw;
     box-shadow: 0.15vw 0.2vw 1.5vw rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    word-break: break-all;
 }
 .card:hover {
     transition: 0.3s ease-in-out;
@@ -222,22 +221,26 @@ body {
     padding: 13px 0 13px 40px;
     cursor: pointer;
 }
-.location p, .website p, .email p {
+.location a, .website a, .email a {
     margin: 0;
     font-size: 15px;
     font-weight: 400;
     color: #1E1E1E;
+    word-break: break-all;
 }
 .location svg {
-    margin: 0 15px 0 10px;
+    margin: 0 12px 0 10px;
+    min-width: 20px;
 }
 .website svg {
     margin: 0 12px 0 8px;
+    min-width: 20px;
 }
 .email svg {
     margin: 0 12px 0 8px;
+    min-width: 20px;
 }
-.location:hover p, .website:hover p, .email:hover p {
+.location:hover a, .website:hover a, .email:hover a {
     color: #3882F6;
     font-weight: 700;
 }
