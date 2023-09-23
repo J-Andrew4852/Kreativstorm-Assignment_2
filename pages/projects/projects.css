@@ -45,21 +45,6 @@
   }
 }
 
-/* Small screens (≥576px) */
-@media (min-width: 576px) {
-  .carousel img {
-    max-width: 80px;
-  }
-}
-
-/* Medium screens (≥768px) */
-@media (min-width: 768px) {
-}
-
-/* Large screens (≥992px) */
-@media (min-width: 992px) {
-}
-
 /* ================================ ROOT ================================ */
 :root {
   font-family: "Roboto", sans-serif;
@@ -75,7 +60,6 @@ body {
 
 /* ================================ NAVIGATION ================================ */
 
-/* ================================ NAVIGATION ================================ */
 .navBar {
   height: 50px;
   background-color: #1f2937;
@@ -187,7 +171,7 @@ body {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: black;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
@@ -306,7 +290,6 @@ footer {
   margin-right: 5px;
 }
 
-/* Back Top Section */
 .backTopSection {
   padding: 10vh 0 10vh 0;
   display: flex;
