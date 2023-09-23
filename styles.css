@@ -166,7 +166,7 @@ nav ul li .active {
     animation: logoRight 3s ease-in infinite;
 } */
 /* ================================ Header end ================================ */
-/* @keyframes startingUp {
+@keyframes startingUp {
     0%{
         transform: translateY(0px);
     }
@@ -179,7 +179,7 @@ nav ul li .active {
 }
 .startingUp {
     animation: startingUp 3s ease-in infinite;
-} */
+}
 /* ================================ firstSection start ================================ */
 .firstSection{
     display: flex;
@@ -188,6 +188,7 @@ nav ul li .active {
     text-align: center;
     padding: 80px;
     color: #353434;
+    gap: 26px;
 }
 .containerFirstSection{
     display: flex;
@@ -346,3 +347,24 @@ padding: 30px 0;
     font-size: 20px;
 }
 /* ================================ footer end ================================ */
+@media screen and (max-width: 900px) {
+    .home img {
+        display: none;
+    }
+    .firstSection{
+        flex-direction: column;
+    }
+    .containerFirstSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerSecondSection{
+        flex-direction: column;
+    }
+    .containerCards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
