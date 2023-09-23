@@ -26,9 +26,14 @@ body {
     z-index: 10;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
+}
+.maxWidth {
+=======
     flex-grow: 1;
   }
   .maxWidth {
+>>>>>>> staging
     display: flex;
     width: 100%;
     max-width: 1800px;
@@ -445,6 +450,7 @@ padding: 30px 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: auto;
     }
     .containerSecondSection{
         flex-direction: column;
