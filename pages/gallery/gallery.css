@@ -313,9 +313,8 @@ p.galleryHeroDescription {
 /* FOOTER */
 
 .footContainer {
-  width: 100%;
   background-color: var(--dark-background-color);
-  padding: 1em;
+  padding: 2em;
   color: var(--hero-secondary-text-color);
   font-family: 'Roboto', sans-serif;
 }
@@ -324,7 +323,6 @@ p.galleryHeroDescription {
   flex-direction: row;
 }
 .footContainer p {
-  color: var();
   padding: 10px 20px 10px 20px;
 }
 .footerLeft {
