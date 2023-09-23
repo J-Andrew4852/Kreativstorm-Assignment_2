@@ -526,12 +526,28 @@ padding: 30px 0;
     width: 40%;
   }
 @media screen and (max-width: 780px) {
-    .footerLeft {
+    .secondSection h1{
+        font-size: 1.2rem;
+    }
+    .thirdSection{
+        padding: 5px 0 20px 0;;
+    }
+    .backTopSection {
+        padding: 0vh 0 3vh 0;}
+    .footContainer .maxWidth{
         flex-direction: column;
     }
     .footContainer {
         padding-top: 2em;
     }
+    .footerRight{
+        width: 100%;
+        text-align: start;
+    }
+    .footerLeft {
+        padding-left: 0em;
+        width: 100%;
+      }
     .footContainer p {
         padding: 3px 20px 3px 20px;
     }

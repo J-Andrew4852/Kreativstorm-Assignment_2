@@ -11,45 +11,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navBar">
-        <div class="maxWidth">
-            <div class="logo">
-                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.988">
-                    <path d="M39 19.5C39 30.2696 30.2696 39 19.5 39C8.73045 39 0 30.2696 0 19.5C0 8.73045 8.73045 0 19.5 0C30.2696 0 39 8.73045 39 19.5Z" fill="#F9FAF8"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5471 8.18838C20.2673 10.3971 21.037 12.5979 21.8563 14.7909C23.1572 18.6979 24.4296 22.6141 25.6736 26.5394C23.692 28.096 21.7127 29.6495 19.7356 31.2C19.6728 31.2 19.61 31.2 19.5471 31.2C19.5471 23.5295 19.5471 15.8589 19.5471 8.18838Z" fill="#46A3CB"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2644 7.8C19.3272 7.8 19.39 7.8 19.4529 7.8C17.4664 14.0685 15.4243 20.315 13.3264 26.5394C11.2843 26.5394 9.24215 26.5394 7.2 26.5394C7.2 26.41 7.2 26.2805 7.2 26.151C8.99083 23.4799 10.7659 20.7937 12.5253 18.0921C12.6195 17.9303 12.7452 17.8008 12.9023 17.7037C13.3679 16.8364 13.8706 15.9949 14.4103 15.1793C15.1413 14.094 15.8953 13.026 16.6724 11.9751C17.5371 10.5815 18.4011 9.18975 19.2644 7.8Z" fill="#130F2D"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4529 7.8C19.4843 7.8 19.5157 7.8 19.5471 7.8C19.5471 7.92946 19.5471 8.05892 19.5471 8.18838C19.5471 15.8589 19.5471 23.5295 19.5471 31.2C19.4529 31.2 19.3586 31.2 19.2644 31.2C17.2873 29.6495 15.308 28.096 13.3264 26.5394C15.4243 20.315 17.4664 14.0685 19.4529 7.8Z" fill="#30235F"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5471 7.8C19.61 7.8 19.6728 7.8 19.7356 7.8C20.599 9.18989 21.4629 10.5816 22.3276 11.9751C23.1047 13.026 23.8587 14.094 24.5897 15.1793C25.1264 15.9929 25.6292 16.8344 26.0977 17.7037C26.2548 17.8008 26.3805 17.9303 26.4747 18.0921C28.2349 20.7943 30.01 23.4805 31.8 26.151C31.8 26.2805 31.8 26.41 31.8 26.5394C29.7578 26.5394 27.7157 26.5394 25.6736 26.5394C24.4296 22.6141 23.1572 18.6979 21.8563 14.7909C21.037 12.5979 20.2673 10.3971 19.5471 8.18838C19.5471 8.05892 19.5471 7.92946 19.5471 7.8Z" fill="#51C2C0"/>
-                    </g>
-                </svg>
-            </div>
-            <input type="checkbox" id="menuToggle" class="menuToggle">
-            <label for="menuToggle" class="burgerIcon">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="30" height="3" fill="white" rx="1.5" />
-                    <rect y="10" width="30" height="3" fill="white" rx="1.5" />
-                    <rect y="20" width="30" height="3" fill="white" rx="1.5" />
-                </svg>
-            </label>
-            <div class="dropdown">
-                <div class="dropdownContent">
-                    <a class="activeNav" href="#">Home</a>
-                    <a href="./pages/about/about.html">About Us</a>
-                    <a href="./pages/projects/projects.html">Projects</a>
-                    <a href="./pages/gallery/gallery.html">Gallery</a>
-                    <a href="./pages/contact/contact.html">Contact</a>
+    <header>
+        <nav class="navBar">
+            <div class="maxWidth">
+                <div class="logo">
+                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.988">
+                        <path d="M39 19.5C39 30.2696 30.2696 39 19.5 39C8.73045 39 0 30.2696 0 19.5C0 8.73045 8.73045 0 19.5 0C30.2696 0 39 8.73045 39 19.5Z" fill="#F9FAF8"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5471 8.18838C20.2673 10.3971 21.037 12.5979 21.8563 14.7909C23.1572 18.6979 24.4296 22.6141 25.6736 26.5394C23.692 28.096 21.7127 29.6495 19.7356 31.2C19.6728 31.2 19.61 31.2 19.5471 31.2C19.5471 23.5295 19.5471 15.8589 19.5471 8.18838Z" fill="#46A3CB"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2644 7.8C19.3272 7.8 19.39 7.8 19.4529 7.8C17.4664 14.0685 15.4243 20.315 13.3264 26.5394C11.2843 26.5394 9.24215 26.5394 7.2 26.5394C7.2 26.41 7.2 26.2805 7.2 26.151C8.99083 23.4799 10.7659 20.7937 12.5253 18.0921C12.6195 17.9303 12.7452 17.8008 12.9023 17.7037C13.3679 16.8364 13.8706 15.9949 14.4103 15.1793C15.1413 14.094 15.8953 13.026 16.6724 11.9751C17.5371 10.5815 18.4011 9.18975 19.2644 7.8Z" fill="#130F2D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4529 7.8C19.4843 7.8 19.5157 7.8 19.5471 7.8C19.5471 7.92946 19.5471 8.05892 19.5471 8.18838C19.5471 15.8589 19.5471 23.5295 19.5471 31.2C19.4529 31.2 19.3586 31.2 19.2644 31.2C17.2873 29.6495 15.308 28.096 13.3264 26.5394C15.4243 20.315 17.4664 14.0685 19.4529 7.8Z" fill="#30235F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5471 7.8C19.61 7.8 19.6728 7.8 19.7356 7.8C20.599 9.18989 21.4629 10.5816 22.3276 11.9751C23.1047 13.026 23.8587 14.094 24.5897 15.1793C25.1264 15.9929 25.6292 16.8344 26.0977 17.7037C26.2548 17.8008 26.3805 17.9303 26.4747 18.0921C28.2349 20.7943 30.01 23.4805 31.8 26.151C31.8 26.2805 31.8 26.41 31.8 26.5394C29.7578 26.5394 27.7157 26.5394 25.6736 26.5394C24.4296 22.6141 23.1572 18.6979 21.8563 14.7909C21.037 12.5979 20.2673 10.3971 19.5471 8.18838C19.5471 8.05892 19.5471 7.92946 19.5471 7.8Z" fill="#51C2C0"/>
+                        </g>
+                    </svg>
+                </div>
+                <input type="checkbox" id="menuToggle" class="menuToggle">
+                <label for="menuToggle" class="burgerIcon">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="3" fill="white" rx="1.5" />
+                        <rect y="10" width="30" height="3" fill="white" rx="1.5" />
+                        <rect y="20" width="30" height="3" fill="white" rx="1.5" />
+                    </svg>
+                </label>
+                <div class="dropdown">
+                    <div class="dropdownContent">
+                        <a class="activeNav" href="#">Home</a>
+                        <a href="./pages/about/about.html">About Us</a>
+                        <a href="./pages/projects/projects.html">Projects</a>
+                        <a href="./pages/gallery/gallery.html">Gallery</a>
+                        <a href="./pages/contact/contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="navContainer">
+                    <a class="navBtn activeNav" href="#">Home</a>
+                    <a class="navBtn" href="./pages/about/about.html">About Us</a>
+                    <a class="navBtn" href="./pages/projects/projects.html">Projects</a>
+                    <a class="navBtn" href="./pages/gallery/gallery.html">Gallery</a>
+                    <a class="navBtn" href="./pages/contact/contact.html">Contact</a>
                 </div>
             </div>
-            <div class="navContainer">
-                <a class="navBtn activeNav" href="#">Home</a>
-                <a class="navBtn" href="./pages/about/about.html">About Us</a>
-                <a class="navBtn" href="./pages/projects/projects.html">Projects</a>
-                <a class="navBtn" href="./pages/gallery/gallery.html">Gallery</a>
-                <a class="navBtn" href="./pages/contact/contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main>
         <section id="homePageTop" class="heroHome">
             <div class="home">
@@ -59,43 +61,59 @@
                     </p>
                     <button>Sign Up</button>
                 </div>
-                <img src="./images/HomePage/Light bulb-amico (2).png" alt="homePhoto">
+                <picture>
+                    <img src="./images/HomePage/Light bulb-amico (2).png" alt="home Photo">
+                </picture>
             </div>
         </section>
         <section class="secondSection">
             <h1>Meet the Digex Studio Team</h1>
             <div class="containerSecondSection">
-                <div class="card">
-                    <img src="./images/HomePage/PHOTO-2023-02-23-15-56-48 2.jpg" alt="">
-                    <h3>Momtaz Asmar</h3>
-                    <p>Fullstack developer</p>
-                </div>
-                <div class="card">
-                    <img src="./images/HomePage/Screenshot 2023-09-22 at 10.01.37 AM.png" alt="">
-                    <h3>Grantas Joniškis</h3>
-                    <p>Fullstack developer</p>
-                </div>
-                <div class="card">
-                    <img src="./images/HomePage/Screenshot 2023-09-22 at 10.02.29 AM.png" alt="">
-                    <h3>James Andrew</h3>
-                    <p>Fullstack developer</p>
-                </div>
-                <div class="card">
-                    <img src="./images/HomePage/Screenshot 2023-09-22 at 10.02.59 AM.png" alt="">
-                    <h3>Agnes Wunderlich</h3>
-                    <p>FrontEnd Developer</p>
-                </div>
+                <figure class="card">
+                        <picture>
+                            <img src="./images/HomePage/PHOTO-2023-02-23-15-56-48 2.jpg" alt="team colleague photo">
+                        </picture>
+                        <figcaption>
+                            <h3>Momtaz Asmar</h3>
+                            <p>Fullstack developer</p>
+                        </figcaption>
+                </figure>
+                <figure class="card">
+                    <picture>
+                        <img src="./images/HomePage/Screenshot 2023-09-22 at 10.01.37 AM.png" alt="team colleague photo">
+                    </picture>
+                    <figcaption>
+                        <h3>Grantas Joniškis</h3>
+                        <p>Fullstack developer</p>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <picture>
+                        <img src="./images/HomePage/Screenshot 2023-09-22 at 10.02.29 AM.png" alt="team colleague photo">
+                    </picture>
+                    <figcaption>
+                        <h3>James Andrew</h3>
+                        <p>Fullstack developer</p>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <picture>
+                        <img src="./images/HomePage/Screenshot 2023-09-22 at 10.02.59 AM.png" alt="team colleague photo">
+                    </picture>
+                    <figcaption>
+                        <h3>Agnes Wunderlich</h3>
+                        <p>FrontEnd Developer</p>
+                    </figcaption>
+                </figure>
             </div>
         </section>
         <section class="firstSection">
             <img class="startingUp" src="./images/HomePage/logo-big (1).svg" alt="logo">
             <blockquote class="containerFirstSection">
-                <!-- <h1>OUR STORY</h1> -->
                 <p>
                     our story is one of passion, creativity, and a relentless pursuit of innovation. It all began with a shared dream to redefine the boundaries of design and marketing.
                 </p>
                 <cite>Digex Studio Team</cite>
-                <!-- <button>About US</button> -->
             </blockquote>
         </section>
         <section class="thirdSection">
@@ -104,24 +122,6 @@
                 <p>Send us information right now on your project and we will get right back to you within the week.</p>
                 <a href="./pages/contact/contact.html#contactForm" class="btn">Start Now</a>
             </div>
-            <!-- <h3>The 3 pillars of success for your <br> professional media website:</h3>
-            <div class="containerCards">
-                <div class="containerCard">
-                    <i class='bx bx-cog'></i>
-                    <h4>Your new website</h3>
-                    <p>Your new website, professionally created by us, can be launched immediately. We even write the texts for you and use exciting images to create a modern, contemporary look.</p>
-                </div>
-                <div class="containerCard">
-                    <i class='bx bx-collection'></i>
-                    <h4>Designed for customer acquisition</h3>
-                    <p>We will not only provide you with a particularly attractive  website, but also an extremely sales-oriented one. We plan lead generation and business initiation for you right away.</p>
-                </div>
-                <div class="containerCard">
-                    <i class='bx bx-search-alt' ></i>
-                    <h4>Your website is search <br>engine optimized</h3>
-                    <p>With our SEO strategy, which is also included, we help you reach exactly those customers, employees and business r partners who are actively looking for you, your achievements and services online.</p>
-                </div>
-            </div> -->
         </section>
     </main>
     <a href="#homePageTop" class="backTopSection">
