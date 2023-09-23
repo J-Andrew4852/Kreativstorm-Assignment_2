@@ -3,19 +3,26 @@
 /* ================================ ROOT ================================ */
 :root {
   font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
 }
 :root a {
   text-decoration: none;
 }
+
+/* ======== CSS RESET ======== */
+
 html {
   scroll-behavior: smooth;
 }
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
 body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
+
 
 /* ================================ NAVIGATION ================================ */
 .navBar {
@@ -163,13 +170,13 @@ body {
 
 #galleryMain {
   padding-top: 50px;
-  width: 100%;
+  width: 100vw;
 }
 /* ================================ GALLERY HERO ================================ */
 
 #galleryHeroSection {
   background-color: var(--dark-background-color);
-  padding: 80px 200px;
+  padding: 80px 10%;
   overflow: hidden;
 }
 
@@ -213,7 +220,8 @@ p.galleryHeroDescription {
 }
 
 .galleryHeroImage {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* ======== IMAGE ANIMATION ======== */
@@ -238,8 +246,6 @@ p.galleryHeroDescription {
 
 /* ================================ GALLERY YEAR ================================ */
 .galleryYear h1 {
-  padding: 40px 0px;
-  font-size: var(--information-header-text-size);
   text-align: center;
   color: var(--information-header-text-color);
 }
@@ -258,8 +264,6 @@ p.galleryHeroDescription {
 
 .galleryImagesContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
   
   max-width: 1000px; 
@@ -271,20 +275,47 @@ p.galleryHeroDescription {
 
 .galleryImageItem {
   height: 200px;
-  background-color: gainsboro;
   border-radius: 15px;
 }
 
-.x2 {
-  grid-column: span 2;
+.galleryImageItem img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0.15vw 0.2vw 1.5vw rgba(0, 0, 0);
 }
 
+.galleryImageItem:hover img {
+  box-shadow: 0.15vw 0.2vw 2.5vw rgba(56, 130, 246, 0.35);
+}
+/* ================================ BACK TO TOP  ================================ */
 
-/* Footer Section */
+.backTopLink {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+.backTopLink h2 {
+  color: var(--dark-background-color);
+  padding: 0 50px 0 20px;
+}
+.backTopLink:hover svg path {
+  fill: #3882F6;
+}
+.backTopLink:hover h2 {
+  color: #3882F6;
+}
+
+/* FOOTER */
+
 .footContainer {
-  width: calc(100% - 4em);
+  width: 100%;
   background-color: var(--dark-background-color);
-  padding: 2em;
+  padding: 1em;
   color: var(--hero-secondary-text-color);
   font-family: 'Roboto', sans-serif;
 }
@@ -293,6 +324,7 @@ p.galleryHeroDescription {
   flex-direction: row;
 }
 .footContainer p {
+  color: var();
   padding: 10px 20px 10px 20px;
 }
 .footerLeft {
@@ -305,14 +337,78 @@ p.galleryHeroDescription {
   padding-right: 2em;
   width: 40%;
 }
-@media screen and (max-width: 780px) {
-  .footerLeft {
-      flex-direction: column;
+
+/* ================================ RESPONSIVE  ================================ */
+
+@media screen and (max-width: 1200px) {
+  .galleryHero {
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 50px;
   }
-  .footContainer {
-      padding-top: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .galleryHeroBackgroundTitle {
+    font-size: 100px !important;
   }
-  .footContainer p {
-      padding: 3px 20px 3px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .galleryHero .primary {
+    font-size: 30px;
+  }
+}
+
+
+@media (min-width: 0px) {
+  .galleryYear h1 {
+    padding: 20px 0px;
+    font-size: var(--header-logo-text-size);
+  }
+
+  .galleryImagesContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    padding: 20px 20px;
+    max-width: 400px;
+  }
+
+  .x2 {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 576px) {
+  .galleryYear h1 {
+    padding: 30px 0px;
+    font-size: var(--header-logo-text-size);
+  }
+
+  .galleryImagesContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    max-width: 576px;
+
+  }
+  .x2 {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .galleryYear h1 {
+    padding: 40px 0px;
+    font-size: var(--information-header-text-size);
+  }
+
+  .galleryImagesContainer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 992px;
+  }
+  .x2 {
+    grid-column: span 2;
   }
 }
