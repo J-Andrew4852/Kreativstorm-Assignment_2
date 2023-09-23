@@ -26,50 +26,141 @@ body {
     z-index: 10;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
 }
 .maxWidth {
+=======
+    flex-grow: 1;
+  }
+  .maxWidth {
+>>>>>>> staging
     display: flex;
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
-}
-.navContainer {
+  }
+  .navContainer {
     margin-left: auto;
     width: fit-content;
     display: flex;
     text-align: right;
     margin-right: 6vw;
-}
-.navContainer a {
+  }
+  .navContainer a {
     margin-top: auto;
     margin-bottom: auto;
-}
-.navBtn {
+  }
+  .navBtn {
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
     margin: 0 0.5rem 0 0.5rem;
     padding: 0 1rem 0 1rem;
-}
-.navBtn:hover {
+  }
+  .navBtn:hover {
     color: #3882F6;
-}
-.activeNav {
+  }
+  .activeNav {
     font-weight: 700;
     color: #3882F6;
-}
-
-.dropBtn {
+  }
+  .navContainer input {
+    display: none
+  }
+  .burgerIcon {
     display: none;
-}
-.dropdown {
-    display: none;
-}
-
-.logo {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo {
+    position: relative;
     width: fit-content;
     margin: auto 0;
     padding-left: 6vw;
+    z-index: 10;
+  }
+  
+  .menuToggle {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    position: absolute;
+    top: -600px;
+    left: 0;
+    width: 100%;
+    background-color: #1F2937;
+    border-bottom: 3px solid var(--button-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    z-index: 5;
+  }
+  .menuToggle:checked + .burgerIcon ~ .dropdown {
+    transform: translateY(600px);
+  }
+  
+  .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  .dropdown .dropdownContent a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 15px 0 15px 0;
+  }
+  .dropdown .dropdownContent .activeNav {
+    font-weight: 700;
+    color: #3882F6;
+  }
+  .dropdown .dropdownContent a:hover {
+    color: #3882F6;
+  }
+  
+  @media (max-width: 768px) {
+    .navContainer {
+        display: none;
+    }
+    .burgerIcon {
+        display: block;
+    }
+    .menuToggle {
+        display: none;
+    }
+    .burgerIcon {
+        padding: 0 6vw 0 0;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .burgerIcon > svg {
+        fill: white;
+    }  
+    .burgerIcon > svg:hover {
+        fill: #3882F6;
+    }  
+    .burgerIcon > svg rect {
+        transition: transform 0.3s ease;
+    }  
+    .menuToggle:checked + .burgerIcon > svg rect:nth-child(1) {
+        transform: rotate(-45deg) translate(-15px, 22px);
+    }
+    
+    .menuToggle:checked + .burgerIcon > svg rect:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menuToggle:checked + .burgerIcon > svg rect:nth-child(3) {
+        transform: rotate(45deg) translate(9px, -22px);
+    }
 }
 
 
@@ -319,7 +410,7 @@ width: 370px;
 }
 
 /* ================================ footer start ================================ */
-footer{
+/* footer{
     background-color: #1F2937;
     color: white;
     padding:10px 20px; 
@@ -345,6 +436,8 @@ padding: 30px 0;
 .copyRight{
     font-size: 20px;
 }
+*/
+
 /* ================================ footer end ================================ */
 @media screen and (max-width: 900px) {
     .home img {
@@ -366,5 +459,42 @@ padding: 30px 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+}
+}
+
+/* Footer Section */
+.footContainer {
+    width: calc(100% - 2em);
+    background-color: var(--dark-background-color);
+    padding: 1em;
+    color: var(--hero-secondary-text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+  .footContainer .maxWidth {
+    display: flex;
+    flex-direction: row;
+  }
+  .footContainer p {
+    padding: 10px 20px 10px 20px;
+  }
+  .footerLeft {
+    display: flex;
+    padding-left: 2em;
+    width: 60%;
+  }
+  .footerRight {
+    text-align: end;
+    padding-right: 2em;
+    width: 40%;
+  }
+@media screen and (max-width: 780px) {
+    .footerLeft {
+        flex-direction: column;
+    }
+    .footContainer {
+        padding-top: 2em;
+    }
+    .footContainer p {
+        padding: 3px 20px 3px 20px;
     }
 }
