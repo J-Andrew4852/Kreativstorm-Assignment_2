@@ -369,6 +369,12 @@ transform:rotateX(179.9deg);
     color: #3882F6;
 }
 
+@media  (max-width: 768px) {
+    .backTopSection {
+      padding: 5vh 0 5vh 0;
+    }
+  }
+
 /* Footer Section */
 .footContainer {
     width: calc(100% - 4em);

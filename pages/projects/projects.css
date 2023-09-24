@@ -396,6 +396,12 @@ footer {
   color: #3882f6;
 }
 
+@media  (max-width: 768px) {
+  .backTopSection {
+    padding: 0 0 10vh 0;
+  }
+}
+
 /* Footer Section */
 .footContainer {
   width: calc(100% - 2em);

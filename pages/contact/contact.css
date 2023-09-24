@@ -523,6 +523,9 @@ textarea.input {
     .shortInput {
         grid-column: span 2;
     }
+    .backTopSection {
+        padding: 5vh 0 5vh 0;
+    }
 }
 @media screen and (max-width: 500px) {
     .gridContainer {
