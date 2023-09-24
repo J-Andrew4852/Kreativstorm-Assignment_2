@@ -408,9 +408,10 @@ textarea.input {
 
 /* Footer Section */
 .footContainer {
-    width: calc(100% - 2em);
+    width: calc(100vw - 2em);
     background-color: var(--dark-background-color);
     padding: 1em;
+    color: var(--hero-secondary-text-color);
 }
 .footContainer .maxWidth {
     display: flex;
