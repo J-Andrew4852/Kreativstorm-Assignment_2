@@ -24,7 +24,7 @@ body {
     z-index: 10;
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    max-width: 100vw;
 }
 .maxWidth {
     display: flex;
@@ -408,7 +408,7 @@ textarea.input {
 
 /* Footer Section */
 .footContainer {
-    width: calc(100vw - 2em);
+    width: calc(100% - 2em);
     background-color: var(--dark-background-color);
     padding: 1em;
     color: var(--hero-secondary-text-color);
