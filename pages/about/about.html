@@ -1,198 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="./about.css">
-</head>
-<body>
-  <header>
-    <nav class="navBar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digex Studio - About Us</title>
+    <link
+      rel="icon"
+      href="../../images/HomePage/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <header id="aboutPageTop">
+      <nav class="navBar">
         <div class="maxWidth">
-            <div class="logo">
-                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.988">
-                    <path d="M39 19.5C39 30.2696 30.2696 39 19.5 39C8.73045 39 0 30.2696 0 19.5C0 8.73045 8.73045 0 19.5 0C30.2696 0 39 8.73045 39 19.5Z" fill="#F9FAF8"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5471 8.18838C20.2673 10.3971 21.037 12.5979 21.8563 14.7909C23.1572 18.6979 24.4296 22.6141 25.6736 26.5394C23.692 28.096 21.7127 29.6495 19.7356 31.2C19.6728 31.2 19.61 31.2 19.5471 31.2C19.5471 23.5295 19.5471 15.8589 19.5471 8.18838Z" fill="#46A3CB"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2644 7.8C19.3272 7.8 19.39 7.8 19.4529 7.8C17.4664 14.0685 15.4243 20.315 13.3264 26.5394C11.2843 26.5394 9.24215 26.5394 7.2 26.5394C7.2 26.41 7.2 26.2805 7.2 26.151C8.99083 23.4799 10.7659 20.7937 12.5253 18.0921C12.6195 17.9303 12.7452 17.8008 12.9023 17.7037C13.3679 16.8364 13.8706 15.9949 14.4103 15.1793C15.1413 14.094 15.8953 13.026 16.6724 11.9751C17.5371 10.5815 18.4011 9.18975 19.2644 7.8Z" fill="#130F2D"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4529 7.8C19.4843 7.8 19.5157 7.8 19.5471 7.8C19.5471 7.92946 19.5471 8.05892 19.5471 8.18838C19.5471 15.8589 19.5471 23.5295 19.5471 31.2C19.4529 31.2 19.3586 31.2 19.2644 31.2C17.2873 29.6495 15.308 28.096 13.3264 26.5394C15.4243 20.315 17.4664 14.0685 19.4529 7.8Z" fill="#30235F"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5471 7.8C19.61 7.8 19.6728 7.8 19.7356 7.8C20.599 9.18989 21.4629 10.5816 22.3276 11.9751C23.1047 13.026 23.8587 14.094 24.5897 15.1793C25.1264 15.9929 25.6292 16.8344 26.0977 17.7037C26.2548 17.8008 26.3805 17.9303 26.4747 18.0921C28.2349 20.7943 30.01 23.4805 31.8 26.151C31.8 26.2805 31.8 26.41 31.8 26.5394C29.7578 26.5394 27.7157 26.5394 25.6736 26.5394C24.4296 22.6141 23.1572 18.6979 21.8563 14.7909C21.037 12.5979 20.2673 10.3971 19.5471 8.18838C19.5471 8.05892 19.5471 7.92946 19.5471 7.8Z" fill="#51C2C0"/>
-                    </g>
-                </svg>
-            </div>
-            <input type="checkbox" id="menuToggle" class="menuToggle">
-            <label for="menuToggle" class="burgerIcon">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="30" height="3" fill="white" rx="1.5" />
-                    <rect y="10" width="30" height="3" fill="white" rx="1.5" />
-                    <rect y="20" width="30" height="3" fill="white" rx="1.5" />
-                </svg>
-            </label>
-            <div class="dropdown">
-                <div class="dropdownContent">
-                    <a href="../../index.html">Home</a>
-                    <a class="activeNav" href="../about/about.html">About Us</a>
-                    <a href="../projects/projects.html">Projects</a>
-                    <a href="../gallery/gallery.html">Gallery</a>
-                    <a href="../contact/contact.html">Contact</a>
-                </div>
-            </div>
-            <div class="navContainer">
-                <a class="navBtn" href="../../index.html">Home</a>
-                <a class="navBtn activeNav" href="../about/about.html">About Us</a>
-                <a class="navBtn" href="../projects/projects.html">Projects</a>
-                <a class="navBtn" href="../gallery/gallery.html">Gallery</a>
-                <a class="navBtn" href="../contact/contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-  </header>
-  <main>
-    <section class="about-us" id="aboutPageTop">
-        <div class="about-us-heading">
-            <h1>About Us</h1>
-        </div>
-    </section>
-    <section class="hero">
-        <h1>We help businesses succeed through<br>
-          harnessing the Internet.
-        </h1>
-        <p>Welcome to our world of creativity and innovation. Join us on a journey through our portfolio, where every project tells a unique story of design excellence and teamwork.</p>
-    </section>
-    <section>
-    <section class="quote-section">
-        <h1>Who We Are</h1>
-        <div class="quote">
-      <blockquote>
-         We value authenticity and being able to express ourselves in a way that is true to us. We appreciate everybody for who they are and what they do.
-      </blockquote>
-        <cite>- Authenticity</cite>
-        </div>
-        <div class="quote">
-      <blockquote>Our achievements are only made possible through our dedication and commitment to produce exceptional work. We value the drive to learn and adapt.
-      </blockquote>
-          <cite>- Dedication</cite>
-            </div>
-            <div class="quote">
-      <blockquote>
-          The foundation behind everything we do is having a love of design, and we believe working in a fun environment creates the oppurtunity to thrive in design.
-      </blockquote>
-          <cite>- Having Fun</cite>
-              </div>
-          </section>
-    <section>      
-          <h1>Meet The Team</h1>
-              <div class="align">
-              <div class="card-container">  
-              <div class="card-vertical">
-              <div class="card-front">
-    <article class="card-front-content">
-          <h1>Farhat Nisha</h1>
-          <p>Front end Developer</p>
-            <p>
-              Fathat  is a talented front-end developer known for his clean code and eye-catching designs.
-            </p>
-          </article>
-            </div>
-            <div class="card-back">
-    <article class="card-back-content">
-              <img src="../../images/About/farhat.png" height="20" weight="20"> 
-               <article>
+          <div class="logo">
+            <svg
+              width="39"
+              height="39"
+              viewBox="0 0 39 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.988">
+                <path
+                  d="M39 19.5C39 30.2696 30.2696 39 19.5 39C8.73045 39 0 30.2696 0 19.5C0 8.73045 8.73045 0 19.5 0C30.2696 0 39 8.73045 39 19.5Z"
+                  fill="#F9FAF8"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.5471 8.18838C20.2673 10.3971 21.037 12.5979 21.8563 14.7909C23.1572 18.6979 24.4296 22.6141 25.6736 26.5394C23.692 28.096 21.7127 29.6495 19.7356 31.2C19.6728 31.2 19.61 31.2 19.5471 31.2C19.5471 23.5295 19.5471 15.8589 19.5471 8.18838Z"
+                  fill="#46A3CB"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.2644 7.8C19.3272 7.8 19.39 7.8 19.4529 7.8C17.4664 14.0685 15.4243 20.315 13.3264 26.5394C11.2843 26.5394 9.24215 26.5394 7.2 26.5394C7.2 26.41 7.2 26.2805 7.2 26.151C8.99083 23.4799 10.7659 20.7937 12.5253 18.0921C12.6195 17.9303 12.7452 17.8008 12.9023 17.7037C13.3679 16.8364 13.8706 15.9949 14.4103 15.1793C15.1413 14.094 15.8953 13.026 16.6724 11.9751C17.5371 10.5815 18.4011 9.18975 19.2644 7.8Z"
+                  fill="#130F2D"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.4529 7.8C19.4843 7.8 19.5157 7.8 19.5471 7.8C19.5471 7.92946 19.5471 8.05892 19.5471 8.18838C19.5471 15.8589 19.5471 23.5295 19.5471 31.2C19.4529 31.2 19.3586 31.2 19.2644 31.2C17.2873 29.6495 15.308 28.096 13.3264 26.5394C15.4243 20.315 17.4664 14.0685 19.4529 7.8Z"
+                  fill="#30235F"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.5471 7.8C19.61 7.8 19.6728 7.8 19.7356 7.8C20.599 9.18989 21.4629 10.5816 22.3276 11.9751C23.1047 13.026 23.8587 14.094 24.5897 15.1793C25.1264 15.9929 25.6292 16.8344 26.0977 17.7037C26.2548 17.8008 26.3805 17.9303 26.4747 18.0921C28.2349 20.7943 30.01 23.4805 31.8 26.151C31.8 26.2805 31.8 26.41 31.8 26.5394C29.7578 26.5394 27.7157 26.5394 25.6736 26.5394C24.4296 22.6141 23.1572 18.6979 21.8563 14.7909C21.037 12.5979 20.2673 10.3971 19.5471 8.18838C19.5471 8.05892 19.5471 7.92946 19.5471 7.8Z"
+                  fill="#51C2C0"
+                />
+              </g>
+            </svg>
+          </div>
+          <input type="checkbox" id="menuToggle" class="menuToggle" />
+          <label for="menuToggle" class="burgerIcon">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="30" height="3" fill="white" rx="1.5" />
+              <rect y="10" width="30" height="3" fill="white" rx="1.5" />
+              <rect y="20" width="30" height="3" fill="white" rx="1.5" />
+            </svg>
+          </label>
+          <div class="dropdown">
+            <div class="dropdownContent">
+              <a href="../../index.html">Home</a>
+              <a class="activeNav" href="../about/about.html">About Us</a>
+              <a href="../projects/projects.html">Projects</a>
+              <a href="../gallery/gallery.html">Gallery</a>
+              <a href="../contact/contact.html">Contact</a>
             </div>
           </div>
-        </div>
-        <div class="card-container">
-            <div class="card-horizontal">
-                <div class="card-front"> 
-          <article class="card-front-content">
-                    <h1>James Andrew</h1>
-                    <p>Full Stack Developer</p>          
-                    <p>James's curiosity drives innovation, keeping our projects on the cutting edge of web development.</p>
-                  <article>
-                </div>
-                <div class="card-back card-back-hr">
-            <article class="card-back-content">
-                <h1></h1>
-                <img src="../../images/About/james.png" height="20" weight="20" > 
-               <article>
-                </div>
-            </div>
-        </div>
-        <div class="card-container">  
-          <div class="card-vertical">
-            <div class="card-front">
-              <article class="card-front-content">
-                    <h1>Momtaz Asmar </h1>
-                    <p>Full Stack Developer</p>
-                <p>Momtaz's attention to detail ensures pixel-perfect web designs that captivate users.</p>
-               <article>
-            </div>
-            <div class="card-back">
-             <article class="card-back-content">
-                <h1></h1>
-                <img src="../../images/About/momtaz.jpg" height="20" weight="20" > 
-               <article>
-            </div>
+          <div class="navContainer">
+            <a class="navBtn" href="../../index.html">Home</a>
+            <a class="navBtn activeNav" href="../about/about.html">About Us</a>
+            <a class="navBtn" href="../projects/projects.html">Projects</a>
+            <a class="navBtn" href="../gallery/gallery.html">Gallery</a>
+            <a class="navBtn" href="../contact/contact.html">Contact</a>
           </div>
         </div>
-        <div class="card-container">
-            <div class="card-horizontal">
-                <div class="card-front"> 
-                  <article class="card-front-content">
-                    <h1>Agnes Wunderlich </h1>
-                    <p>Front end Developer</p>
-                    <p>Agnes brings fresh perspectives to our projects with a focus on responsive design.
-                    </p>
-                  <article>
-                </div>
-                <div class="card-back card-back-hr">
-                   <article class="card-back-content">
-                <h1> </h1>
-                <img src="../../images/About/agnes.png" height="20" weight="20" > 
-               <article>
-                </div>
-            </div>
+      </nav>
+    </header>
+    <main>
+      <section id="section1">
+        <h1>About Us</h1>
+      </section>
+      <section class="container">
+        <div class="content">
+          <h2>
+            <strong
+              >We help businesses succeed through harnessing the
+              internet.</strong
+            >
+          </h2>
+          <p>
+            Welcome to our world of creativity and innovation. Join us on a
+            journey through our portfolio, where every project tells a unique
+            story of design excellence and teamwork.
+          </p>
         </div>
-        <div class="card-container">
-            <div class="card-horizontal">
-                <div class="card-front"> 
-                  <article class="card-front-content">
-                    <h1>Grantas Joniskis </h1>
-                    <p>Full Stack Developer</p>
-                    <p>Grantas is a coding enthusiast who turns ideas into interactive web experiences.</p>
-                  <article>
-                </div>
-                <div class="card-back card-back-hr">
-                   <article class="card-back-content">
-                <div class="card-image">
-                <img src="../../images/About/grantas.png" height="20"weight="20"> 
-                </div>
-               <article>
-                </div>
+      </section>
+      <section class="container2">
+        <h2>Who we are</h2>
+        <div class="rectangle">
+          <h3>Authenticity</h3>
+          <p>
+            We value authenticity and being able to express ourselves in a way
+            that is true to us. We appreciate everybody for who they are and
+            what they do.
+          </p>
+        </div>
+        <div class="rectangle">
+          <h3>Dedication</h3>
+          <p>
+            Our achievements are only made possible through our dedication and
+            commitment to produce exceptional work. We value the drive to learn
+            and adapt.
+          </p>
+        </div>
+        <div class="rectangle">
+          <h3>Having Fun</h3>
+          <p>
+            The foundation behind everything we do is having a love of design,
+            and we believe working in a fun environment creates the oppurtunity
+            to thrive in design.
+          </p>
+        </div>
+      </section>
+      <div class="team-container">
+        <section class="team">
+          <h2><strong>Meet The Team</strong></h2>
+          <div class="team-member">
+            <div class="member-photo">
+              <img
+                src="../../images/About/grantas.png"
+                alt="Grantas Joniskis"
+              />
             </div>
-        </div> 
-      </setion>  
-</section>
-</main>
-<a href="#aboutPageTop" class="backTopSection">
-  <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M43.7918 34.6687L48.2695 30.191L34.8333 16.7517L21.3972 30.1878L25.878 34.6655L31.6667 28.88V52.7472H38V28.88L43.7918 34.6687Z" fill="black"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M59.4637 10.203C45.8597 -3.401 23.807 -3.401 10.203 10.203C-3.401 23.807 -3.401 45.8597 10.203 59.4637C23.807 73.0677 45.8597 73.0677 59.4637 59.4637C73.0677 45.8597 73.0677 23.807 59.4637 10.203ZM54.986 14.6807C49.6412 9.33585 42.392 6.33316 34.8333 6.33316C27.2746 6.33316 20.0255 9.33585 14.6807 14.6807C9.33585 20.0255 6.33316 27.2746 6.33316 34.8333C6.33316 42.392 9.33585 49.6412 14.6807 54.986C20.0255 60.3308 27.2746 63.3335 34.8333 63.3335C42.392 63.3335 49.6412 60.3308 54.986 54.986C60.3308 49.6412 63.3335 42.392 63.3335 34.8333C63.3335 27.2746 60.3308 20.0255 54.986 14.6807Z" fill="black"/>
-  </svg>
-  <h2>Back to Top</h2>
-</a>
-<footer class="footContainer">
-  <div class="maxWidth">
-      <div class="footerLeft">
+            <div class="member-description">
+              <h3>Grantas Joniškis</h3>
+              <p>
+                Grantas is a coding enthusiast who turns ideas into interactive
+                web experiences.
+              </p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="../../images/About/james.png" alt="Andrew James" />
+            </div>
+            <div class="member-description">
+              <h3>Andrew James</h3>
+              <p>
+                James' curiosity drives innovation, keeping our projects on the
+                cutting edge of web development.
+              </p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="../../images/About/agnes.png" alt="Agnes Wunderlich" />
+            </div>
+            <div class="member-description">
+              <h3>Agnes Wunderlich</h3>
+              <p>
+                Agnes brings fresh perspectives to our projects with a focus on
+                responsive design.
+              </p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="../../images/About/farhat.png" alt="Farhat Nisha" />
+            </div>
+            <div class="member-description">
+              <h3>Farhat Nisha</h3>
+              <p>
+                Farhat is a talented front-end developer known for her clean
+                code and eye-catching designs.
+              </p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="../../images/About/momtaz.jpg" alt="Momtaz Asmar" />
+            </div>
+            <div class="member-description">
+              <h3>Momtaz Asmar</h3>
+              <p>
+                Momtaz's attention to detail ensures pixel-perfect web designs
+                that captivate users.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <a href="#aboutPageTop" class="backTopSection">
+      <svg
+        width="70"
+        height="70"
+        viewBox="0 0 70 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M43.7918 34.6687L48.2695 30.191L34.8333 16.7517L21.3972 30.1878L25.878 34.6655L31.6667 28.88V52.7472H38V28.88L43.7918 34.6687Z"
+          fill="black"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M59.4637 10.203C45.8597 -3.401 23.807 -3.401 10.203 10.203C-3.401 23.807 -3.401 45.8597 10.203 59.4637C23.807 73.0677 45.8597 73.0677 59.4637 59.4637C73.0677 45.8597 73.0677 23.807 59.4637 10.203ZM54.986 14.6807C49.6412 9.33585 42.392 6.33316 34.8333 6.33316C27.2746 6.33316 20.0255 9.33585 14.6807 14.6807C9.33585 20.0255 6.33316 27.2746 6.33316 34.8333C6.33316 42.392 9.33585 49.6412 14.6807 54.986C20.0255 60.3308 27.2746 63.3335 34.8333 63.3335C42.392 63.3335 49.6412 60.3308 54.986 54.986C60.3308 49.6412 63.3335 42.392 63.3335 34.8333C63.3335 27.2746 60.3308 20.0255 54.986 14.6807Z"
+          fill="black"
+        />
+      </svg>
+      <h2>Back to Top</h2>
+    </a>
+    <footer class="footContainer">
+      <div class="maxWidth">
+        <div class="footerLeft">
           <p>Terms and Conditions</p>
           <p>Privacy</p>
           <p>Help</p>
-      </div>
-      <div class="footerRight">
+        </div>
+        <div class="footerRight">
           <p>Copyright © 2023 - Digex Studio</p>
+        </div>
       </div>
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>
