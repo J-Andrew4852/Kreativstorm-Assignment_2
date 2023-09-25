@@ -406,30 +406,61 @@ textarea.input {
     color: #3882F6;
 }
 
-/* Footer Section */
+/* ================================ FOOTER ================================ */
+
 .footContainer {
-    width: calc(100% - 2em);
     background-color: var(--dark-background-color);
-    padding: 1em;
+    padding: 2em;
     color: var(--hero-secondary-text-color);
-}
-.footContainer .maxWidth {
+    font-family: 'Roboto', sans-serif;
+  }
+  .footContainer .maxWidth {
     display: flex;
     flex-direction: row;
-}
-.footContainer p {
+  }
+  .footContainer p {
     padding: 10px 20px 10px 20px;
-}
-.footerLeft {
+  }
+  .footerLeft {
     display: flex;
     padding-left: 2em;
     width: 60%;
-}
-.footerRight {
+  }
+  .footerRight {
     text-align: end;
     padding-right: 2em;
     width: 40%;
-}
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footContainer {
+      padding: 1em;
+    }
+  
+    .footContainer p {
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    .footerLeft {
+      padding-left: 1em;
+    }
+  
+    .footerRight {
+      padding-right: 1em;
+    }
+  }
+  
+  @media screen and (min-width: 577px) and (max-width: 992px) {
+    .footContainer {
+      padding: 1.5em;
+    }
+  
+    .footContainer p {
+      font-size: 16px;
+    }
+  }
+  
 
 
 @media screen and (min-width: 1800px) {
@@ -492,16 +523,8 @@ textarea.input {
     .input {
         font-size: 24px;
     }
-    .footerLeft {
-        flex-direction: column;
-    }
-    .footContainer {
-        padding-top: 2em;
-    }
-    .footContainer p {
-        padding: 3px 20px 3px 20px;
-    }
 }
+
 @media screen and (max-width: 600px) {
     .card {
         max-width: 95vw;
