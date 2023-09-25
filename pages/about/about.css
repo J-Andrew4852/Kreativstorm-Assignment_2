@@ -156,13 +156,40 @@ body {
     transform: rotate(45deg) translate(9px, -22px);
   }
 
-  .container {
-    flex-direction: column;
-    min-height: auto;
+  section#section1,
+  section#section1 h1 {
+    display: none;
   }
 
-  .content {
-    max-width: 90%;
+  section.container {
+    flex-direction: column;
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  section.team {
+    align-items: center;
+  }
+
+  div.content {
+    text-align: left;
+    padding: 20vh 0 10vh 0;
+    margin: 0;
+    height: auto;
+  }
+
+  div.content h3 {
+    font-size: var(--hero-main-text-size);
+    color: var(--hero-main-text-color);
+    text-align: left;
+  }
+
+  div.content p {
+    font-size: var(--hero-secondary-text-size);
+    color: var(--hero-secondary-text-color);
+    font-weight: 300;
+    line-height: 150%;
   }
 
   .team-member {
@@ -175,8 +202,9 @@ body {
   .member-photo {
     width: 200px !important;
     height: 200px !important;
-    margin-right: 0;
+    margin-right: 0 !important;
     margin-bottom: 10px;
+    align-items: center;
   }
 
   .member-description {
@@ -221,13 +249,15 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  height: auto;
 }
 
 .content {
   text-align: center;
   color: #f9faf8;
-  max-width: 50%;
+  max-width: 60%;
   padding: 20px;
+  height: auto;
 }
 
 .content h2 {

@@ -20,6 +20,11 @@
     margin: 10px 0;
   }
 
+  section#section1,
+  section#section1 h1 {
+    display: none;
+  }
+
   .project {
     flex-direction: column;
     align-items: center;
@@ -47,21 +52,34 @@
     display: none;
   }
 
+  section.container {
+    padding: 4rem;
+  }
+
+  div.onMobile {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
   .onMobile,
   .onMobile h3,
   .mobile-paragraph {
     display: block;
-    color: #e5e7eb;
-    text-align: center;
+
+    text-align: left;
   }
 
   .onMobile h3 {
-    font-size: 36px;
+    font-size: var(--hero-main-text-size);
+    color: var(--hero-main-text-color);
   }
 
   .mobile-paragraph {
-    font-size: 28px;
-    font-weight: 100;
+    font-size: var(--hero-secondary-text-size);
+    color: var(--hero-secondary-text-color);
+    font-weight: 300;
+    line-height: 150%;
   }
 }
 
